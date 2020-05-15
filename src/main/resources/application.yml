@@ -1,0 +1,13 @@
+server:
+  port: 3000
+  
+spring:
+  application:
+    name: atguigu-provider
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5000/eureka/
+
+management:  endpoints:    web:      exposure:        include: hystrix.stream
