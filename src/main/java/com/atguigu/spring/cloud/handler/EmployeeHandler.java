@@ -53,6 +53,7 @@ public class EmployeeHandler {
 		
 		logger.info(keyword);
 		logger.info("right");
+		logger.info("left");
 
 		List<Employee> empList = new ArrayList<>();
 		empList.add(new Employee(33, "employee33", 333.33));
