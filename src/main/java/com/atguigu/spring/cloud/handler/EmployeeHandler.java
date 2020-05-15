@@ -52,6 +52,7 @@ public class EmployeeHandler {
 	public List<Employee> getEmplistRemote(@RequestParam("keyword") String keyword) {
 		
 		logger.info(keyword);
+		logger.info("left");
 
 		List<Employee> empList = new ArrayList<>();
 		empList.add(new Employee(33, "employee33", 333.33));
