@@ -16,6 +16,8 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 @RestController
 public class EmployeeHandler {
 	
+	private static final int a = 1;
+	
 	private Logger logger = LoggerFactory.getLogger(EmployeeHandler.class);
 	
 	// @HystrixCommand注解指定当前方法出问题时调用的备份方法（使用fallbackMethod属性指定）
